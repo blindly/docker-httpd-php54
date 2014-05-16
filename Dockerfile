@@ -25,7 +25,7 @@ RUN mv /tmp/ioncube_install/ioncube/ioncube_loader_lin_5.3.so /usr/lib64/php/mod
 RUN rm -rf /tmp/ioncube_install
 
 # Add Ioncube.ini
-ADD 20-ioncube.ini /etc/php.d/
+ADD 20-ioncube.ini /etc/php.d/20-ioncube.ini
 
 # Add HTTPD Conf
 ADD httpd.conf /etc/httpd/conf/httpd.conf
