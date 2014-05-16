@@ -24,6 +24,9 @@ RUN tar zxf /tmp/ioncube_install/ioncube_loaders_lin_x86-64.tar.gz
 RUN mv /tmp/ioncube_install/ioncube/ioncube_loader_lin_5.3.so /usr/lib64/php/modules
 RUN rm -rf /tmp/ioncube_install
 
+# Add Ioncube.ini
+ADD 20-ioncube.ini /etc/php.d/
+
 # Add HTTPD Conf
 ADD httpd.conf /etc/httpd/conf/httpd.conf
 
