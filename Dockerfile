@@ -5,7 +5,7 @@ MAINTAINER github.com/blindly
 RUN yum install httpd mod_ssl php* -y
 
 # Install EPEL
-RUN rpm -i http://mirrors.servercentral.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm
+RUN rpm -i http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 
 # Install MBstring
 RUN yum install mbstring php-mbstring -y
