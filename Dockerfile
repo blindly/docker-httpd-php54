@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER github.com/blindly
 
 # Install HTTPD
-RUN yum install httpd php* -y
+RUN yum install httpd mod_ssl php* -y
 
 # Install EPEL
 RUN rpm -i http://mirrors.servercentral.net/fedora/epel/6/i386/epel-release-6-8.noarch.rpm
